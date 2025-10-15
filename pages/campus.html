@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Macaraig Marc Ciejay, Abangan Mark Angelo" />
+    <meta name="keywords" content="School, LSPU, College School, College" />
+    <meta
+      name="description"
+      content="An educational mini-site about Laguna State Polytechnic University (LSPU). Explore its campuses, courses, history, and contact information through this basic HTML project."
+    />
+    <title>LSPU - Laguna State Polytechnic University</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #e6f3f0;
+    "
+  >
+    <!-- Header with Navigation -->
+    <div
+      style="
+        background: linear-gradient(to right, rgb(22, 209, 209), #024f8c);
+        padding: 15px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      "
+    >
+      <nav
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        "
+      >
+        <div style="display: flex; align-items: center">
+          <h1
+            style="
+              margin: 0;
+              color: white;
+              font-size: 32px;
+              letter-spacing: 1px;
+            "
+          >
+            LSPU
+          </h1>
+          <span style="color: white; margin-left: 10px; font-size: 14px"
+            >Laguna State Polytechnic University</span
+          >
+        </div>
+
+        <ul
+          style="
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+            font-size: 18px;
+          "
+        >
+          <li>
+            <a
+              href="../index.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                background-color: rgba(255, 255, 255, 0.2);
+              "
+              >Campus</a
+            >
+          </li>
+          <li>
+            <a
+              href="faculty.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >Faculty</a
+            >
+          </li>
+          <li>
+            <a
+              href="news.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >News</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div
+      style="
+        background: linear-gradient(
+            rgba(2, 79, 140, 0.8),
+            rgba(22, 209, 209, 0.8)
+          ),
+          url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+        background-size: cover;
+        background-position: center;
+        padding: 80px 20px;
+        text-align: center;
+        color: white;
+      "
+    >
+      <h1
+        style="
+          font-size: 48px;
+          margin: 0 0 20px 0;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        "
+      >
+        LSPU Campuses
+      </h1>
+      <p
+        style="
+          font-size: 20px;
+          max-width: 800px;
+          margin: 0 auto;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        "
+      >
+        Explore our four campuses across Laguna, each offering unique programs
+        and opportunities for students.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div style="display: flex; min-height: calc(100vh - 180px)">
+      <!-- Left Sidebar -->
+      <div
+        style="
+          width: 230px;
+          background: #6eaec3;
+          color: white;
+          padding: 20px;
+          border-right: 3px solid #1491ea;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: sticky;
+          top: 80px;
+          height: calc(100vh - 80px);
+        "
+      >
+        <!-- Navigation -->
+        <div>
+          <h3
+            style="
+              margin: 0 0 15px 0;
+              font-size: 18px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+              padding-bottom: 8px;
+            "
+          >
+            📍 Campuses
+          </h3>
+
+          <a
+            href="#santa-cruz"
+            style="
+              display: block;
+              margin: 10px 0;
+              text-decoration: none;
+              color: white;
+              font-size: 15px;
+              padding: 8px;
+              border-radius: 5px;
+              transition: 0.3s;
+              background: rgba(255, 255, 255, 0.1);
+            "
+            >🏫 Santa Cruz</a
+          >
+          <a
+            href="#san-pablo"
+            style="
+              display: block;
+              margin: 10px 0;
+              text-decoration: none;
+              color: white;
+              font-size: 15px;
+              padding: 8px;
+              border-radius: 5px;
+              transition: 0.3s;
+            "
+            >🏫 San Pablo</a
+          >
+          <a
+            href="#siniloan"
+            style="
+              display: block;
+              margin: 10px 0;
+              text-decoration: none;
+              color: white;
+              font-size: 15px;
+              padding: 8px;
+              border-radius: 5px;
+              transition: 0.3s;
+            "
+            >🏫 Siniloan</a
+          >
+          <a
+            href="#los-banos"
+            style="
+              display: block;
+              margin: 10px 0;
+              text-decoration: none;
+              color: white;
+              font-size: 15px;
+              padding: 8px;
+              border-radius: 5px;
+              transition: 0.3s;
+            "
+            >🏫 Los Baños</a
+          >
+
+          <div style="margin-top: 30px">
+            <h3
+              style="
+                margin: 0 0 15px 0;
+                font-size: 18px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                padding-bottom: 8px;
+              "
+            >
+              📊 Quick Facts
+            </h3>
+            <div
+              style="
+                background: rgba(255, 255, 255, 0.1);
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+              "
+            >
+              <div style="font-size: 24px; font-weight: bold">4</div>
+              <div style="font-size: 12px">Campuses</div>
+            </div>
+            <div
+              style="
+                background: rgba(255, 255, 255, 0.1);
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+              "
+            >
+              <div style="font-size: 24px; font-weight: bold">50+</div>
+              <div style="font-size: 12px">Degree Programs</div>
+            </div>
+            <div
+              style="
+                background: rgba(255, 255, 255, 0.1);
+                padding: 10px;
+                border-radius: 5px;
+              "
+            >
+              <div style="font-size: 24px; font-weight: bold">30k+</div>
+              <div style="font-size: 12px">Students</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enroll Button -->
+        <div>
+          <a
+            href="#"
+            style="
+              display: block;
+              font-weight: bold;
+              color: white;
+              background: #1491ea;
+              text-align: center;
+              padding: 12px;
+              border-radius: 8px;
+              text-decoration: none;
+              font-size: 16px;
+              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+              transition: background-color 0.3s;
+            "
+            >Enroll Now</a
+          >
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div style="flex: 1; padding: 25px; overflow-y: auto">
+        <!-- Santa Cruz Campus -->
+        <div
+          id="santa-cruz"
+          style="
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              top: -15px;
+              left: 20px;
+              background: #1491ea;
+              color: white;
+              padding: 5px 15px;
+              border-radius: 20px;
+              font-size: 14px;
+              font-weight: bold;
+            "
+          >
+            Main Campus
+          </div>
+          <h2
+            style="
+              margin-top: 15px;
+              color: #1491ea;
+              border-bottom: 2px solid #eee;
+              padding-bottom: 8px;
+            "
+          >
+            Santa Cruz Campus
+          </h2>
+          <div style="display: flex; gap: 20px; align-items: flex-start">
+            <!-- Left Info -->
+            <div
+              style="
+                flex: 1.5;
+                border-right: 1px solid #ddd;
+                padding-right: 20px;
+                font-size: 14px;
+              "
+            >
+              <img
+                src="https://lspu.edu.ph/assets/img/campus_thumbs/scc2.PNG"
+                alt="Santa Cruz Campus"
+                style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+              />
+              <p>
+                <strong>Address:</strong><br />Brgy. Bubukal, Santa Cruz, Laguna
+              </p>
+              <p><strong>Phone:</strong> (049) 304-7000</p>
+              <p><strong>Email:</strong> santa.cruz@lspu.edu.ph</p>
+              <p><strong>Campus Director:</strong> Dr. Mario R. Rance</p>
+
+              <div
+                style="
+                  margin-top: 20px;
+                  background: #f5f9ff;
+                  padding: 15px;
+                  border-radius: 5px;
+                  border-left: 4px solid #1491ea;
+                "
+              >
+                <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                  🏆 Campus Highlights
+                </h4>
+                <ul style="margin: 0; padding-left: 20px">
+                  <li>Center of Excellence in IT Education</li>
+                  <li>Modern Engineering Laboratories</li>
+                  <li>International Partnership Programs</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right Courses -->
+            <div style="flex: 2.5; font-size: 14px">
+              <h3 style="margin-top: 0; color: #333">Departments & Courses</h3>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                  gap: 15px;
+                "
+              >
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Computer Studies (CCS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Information Technology</li>
+                    <li>BS Computer Science</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Engineering (COE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Industrial Engineering</li>
+                    <li>BS Electrical Engineering</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Hospitality Management and Tourism (CHMT)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Hospitality Management</li>
+                    <li>BS Tourism Management</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Teacher Education (CTE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BSEd English</li>
+                    <li>BSEd Math</li>
+                    <li>BEEd</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Industrial Technology (CIT)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Industrial Technology (Automotive)</li>
+                    <li>BS Industrial Technology (Electrical)</li>
+                    <li>BS Industrial Technology (Electronics)</li>
+                    <li>BS Industrial Technology (Food)</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Arts and Sciences (CAS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Biology</li>
+                    <li>BS Mathematics</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Business Administration and Accountancy (CBAA)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Business Administration (Marketing)</li>
+                    <li>BS Business Administration (HRM)</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Criminal Justice Education (CCJE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Criminology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- San Pablo Campus -->
+        <div
+          id="san-pablo"
+          style="
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+          "
+        >
+          <h2
+            style="
+              margin-top: 0;
+              color: #1491ea;
+              border-bottom: 2px solid #eee;
+              padding-bottom: 8px;
+            "
+          >
+            San Pablo City Campus
+          </h2>
+          <div style="display: flex; gap: 20px; align-items: flex-start">
+            <div
+              style="
+                flex: 1.5;
+                border-right: 1px solid #ddd;
+                padding-right: 20px;
+                font-size: 14px;
+              "
+            >
+              <img
+                src="https://lspu.edu.ph/assets/img/campus_thumbs/spcc2.PNG"
+                alt="San Pablo City Campus"
+                style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+              />
+              <p>
+                <strong>Address:</strong><br />Del Remedio, San Pablo City,
+                Laguna
+              </p>
+              <p><strong>Phone:</strong> (049) 554-9910</p>
+              <p><strong>Email:</strong> san.pablo@lspu.edu.ph</p>
+              <p><strong>Campus Director:</strong> Dr. Eden C. De La Paz</p>
+
+              <div
+                style="
+                  margin-top: 20px;
+                  background: #f5f9ff;
+                  padding: 15px;
+                  border-radius: 5px;
+                  border-left: 4px solid #1491ea;
+                "
+              >
+                <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                  🏆 Campus Highlights
+                </h4>
+                <ul style="margin: 0; padding-left: 20px">
+                  <li>Center of Development in Engineering</li>
+                  <li>Industry-Academe Linkage Programs</li>
+                  <li>Research and Innovation Hub</li>
+                </ul>
+              </div>
+            </div>
+            <div style="flex: 2.5; font-size: 14px">
+              <h3 style="margin-top: 0; color: #333">Departments & Courses</h3>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                  gap: 15px;
+                "
+              >
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Computer Studies (CCS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Computer Science</li>
+                    <li>BS Information Technology</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Engineering (COE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Electrical Engineering</li>
+                    <li>BS Mechanical Engineering</li>
+                    <li>BS Civil Engineering</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Industrial Technology (CIT)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Industrial Technology (Drafting)</li>
+                    <li>BS Industrial Technology (Electronics)</li>
+                    <li>BS Industrial Technology (Automotive)</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Teacher Education (CTE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BSEd English</li>
+                    <li>BSEd Science</li>
+                    <li>BEEd</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Business Administration and Accountancy (CBAA)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Business Administration (Financial)</li>
+                    <li>BS Business Administration (Marketing)</li>
+                    <li>BS Business Administration (HRM)</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Criminal Justice Education (CCJE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Criminology</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Arts and Sciences (CAS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Psychology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Siniloan Campus -->
+        <div
+          id="siniloan"
+          style="
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+          "
+        >
+          <h2
+            style="
+              margin-top: 0;
+              color: #1491ea;
+              border-bottom: 2px solid #eee;
+              padding-bottom: 8px;
+            "
+          >
+            Siniloan Campus
+          </h2>
+          <div style="display: flex; gap: 20px; align-items: flex-start">
+            <div
+              style="
+                flex: 1.5;
+                border-right: 1px solid #ddd;
+                padding-right: 20px;
+                font-size: 14px;
+              "
+            >
+              <img
+                src="https://lspu.edu.ph/assets/img/campus_thumbs/sc2.PNG"
+                alt="Siniloan Campus"
+                style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+              />
+              <p>
+                <strong>Address:</strong><br />L. de Leon St., Siniloan, Laguna
+              </p>
+              <p><strong>Phone:</strong> (049) 303-0030 / (049) 813-0452</p>
+              <p><strong>Email:</strong> siniloan@lspu.edu.ph</p>
+              <p><strong>Campus Director:</strong> Dr. Edgardo D. Reyes</p>
+
+              <div
+                style="
+                  margin-top: 20px;
+                  background: #f5f9ff;
+                  padding: 15px;
+                  border-radius: 5px;
+                  border-left: 4px solid #1491ea;
+                "
+              >
+                <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                  🏆 Campus Highlights
+                </h4>
+                <ul style="margin: 0; padding-left: 20px">
+                  <li>Center for Environmental Studies</li>
+                  <li>Fisheries and Aquatic Resources Hub</li>
+                  <li>Agricultural Innovation Center</li>
+                </ul>
+              </div>
+            </div>
+            <div style="flex: 2.5; font-size: 14px">
+              <h3 style="margin-top: 0; color: #333">Departments & Courses</h3>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                  gap: 15px;
+                "
+              >
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Arts and Sciences (CAS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Environmental Science</li>
+                    <li>BS Biology</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Engineering (COE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Agricultural Engineering</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Computer Studies (CCS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Information Technology</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Teacher Education (CTE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BSEd English</li>
+                    <li>BSEd Math</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Business Administration and Accountancy (CBAA)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Business Administration</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Fisheries (CF)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Fisheries</li>
+                    <li>BS Forestry</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Los Baños Campus -->
+        <div
+          id="los-banos"
+          style="
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+          "
+        >
+          <h2
+            style="
+              margin-top: 0;
+              color: #1491ea;
+              border-bottom: 2px solid #eee;
+              padding-bottom: 8px;
+            "
+          >
+            Los Baños Campus
+          </h2>
+          <div style="display: flex; gap: 20px; align-items: flex-start">
+            <div
+              style="
+                flex: 1.5;
+                border-right: 1px solid #ddd;
+                padding-right: 20px;
+                font-size: 14px;
+              "
+            >
+              <img
+                src="https://lspu.edu.ph/assets/img/campus_thumbs/lbc2.PNG"
+                alt="Los Baños Campus"
+                style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+              />
+              <p><strong>Address:</strong><br />Malinta, Los Baños, Laguna</p>
+              <p><strong>Phone:</strong> (049) 308-4530</p>
+              <p><strong>Email:</strong> los.banos@lspu.edu.ph</p>
+              <p><strong>Campus Director:</strong> Dr. Roberto C. Guarte</p>
+
+              <div
+                style="
+                  margin-top: 20px;
+                  background: #f5f9ff;
+                  padding: 15px;
+                  border-radius: 5px;
+                  border-left: 4px solid #1491ea;
+                "
+              >
+                <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                  🏆 Campus Highlights
+                </h4>
+                <ul style="margin: 0; padding-left: 20px">
+                  <li>Agricultural Research Center</li>
+                  <li>Development Communication Hub</li>
+                  <li>Partnership with IRRI and UPLB</li>
+                </ul>
+              </div>
+            </div>
+            <div style="flex: 2.5; font-size: 14px">
+              <h3 style="margin-top: 0; color: #333">Departments & Courses</h3>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                  gap: 15px;
+                "
+              >
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Arts and Sciences (CAS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Development Communication</li>
+                    <li>BS Environmental Science</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Engineering (COE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Agricultural Engineering</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Agriculture (CA)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Agriculture</li>
+                    <li>BS Forestry</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Teacher Education (CTE)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BEEd</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="background: #f9f9f9; padding: 15px; border-radius: 5px"
+                >
+                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                    College of Computer Studies (CCS)
+                  </h4>
+                  <ul style="margin: 0; padding-left: 20px">
+                    <li>BS Information Technology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #024f8c; color: white; padding: 40px 20px">
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        "
+      >
+        <div style="width: 300px; margin-bottom: 20px">
+          <h3 style="color: #e6fafa; margin-bottom: 20px">LSPU</h3>
+          <p style="line-height: 1.6">
+            Laguna State Polytechnic University is a premier institution
+            providing quality, affordable, and globally competitive education.
+          </p>
+          <div style="margin-top: 15px">
+            <a
+              href="#"
+              style="
+                display: inline-block;
+                margin-right: 10px;
+                color: white;
+                font-size: 20px;
+              "
+              >📘</a
+            >
+            <a
+              href="#"
+              style="
+                display: inline-block;
+                margin-right: 10px;
+                color: white;
+                font-size: 20px;
+              "
+              >📷</a
+            >
+            <a
+              href="#"
+              style="
+                display: inline-block;
+                margin-right: 10px;
+                color: white;
+                font-size: 20px;
+              "
+              >🐦</a
+            >
+            <a
+              href="#"
+              style="display: inline-block; color: white; font-size: 20px"
+              >📹</a
+            >
+          </div>
+        </div>
+
+        <div style="width: 200px; margin-bottom: 20px">
+          <h4 style="color: #e6fafa; margin-bottom: 15px">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none">Home</a>
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none"
+                >Admissions</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none"
+                >Academics</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none"
+                >Research</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div style="width: 300px; margin-bottom: 20px">
+          <h4 style="color: #e6fafa; margin-bottom: 15px">
+            Contact Information
+          </h4>
+          <p style="margin: 8px 0">📞 +63 49 304 7000</p>
+          <p style="margin: 8px 0">📧 info@lspu.edu.ph</p>
+          <p style="margin: 8px 0">
+            LSPU Main Administration, Santa Cruz, Laguna
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          max-width: 1200px;
+          margin: 30px auto 0;
+          padding-top: 20px;
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+          text-align: center;
+        "
+      >
+        <p style="margin: 0; font-size: 14px">
+          &copy; 2023 Laguna State Polytechnic University. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

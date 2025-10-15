@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Macaraig Marc Ciejay, Abangan Mark Angelo" />
+    <meta name="keywords" content="School, LSPU, College School, College" />
+    <meta
+      name="description"
+      content="An educational mini-site about Laguna State Polytechnic University (LSPU). Explore its campuses, courses, history, and contact information through this basic HTML project."
+    />
+    <title>LSPU - Laguna State Polytechnic University</title>
+  </head>
+  <body
+    lang="en"
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #e6f3f0;
+    "
+  >
+    <div
+      style="
+        background: linear-gradient(to right, rgb(22, 209, 209), #024f8c);
+        padding: 15px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <nav
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        "
+      >
+        <div style="display: flex; align-items: center">
+          <h1
+            style="
+              margin: 0;
+              color: white;
+              font-size: 32px;
+              letter-spacing: 1px;
+            "
+          >
+            LSPU
+          </h1>
+          <span style="color: white; margin-left: 10px; font-size: 14px"
+            >Laguna State Polytechnic University</span
+          >
+        </div>
+
+        <ul
+          style="
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 40px;
+            font-size: 18px;
+          "
+        >
+          <li>
+            <a
+              href="../index.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="campus.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >Campus</a
+            >
+          </li>
+          <li>
+            <a
+              href="faculty.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >Faculty</a
+            >
+          </li>
+          <li>
+            <a
+              href="news.html"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >News</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+              "
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main -->
+    <main
+      style="
+        padding: 30px;
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        gap: 30px;
+        box-sizing: border-box;
+      "
+    >
+      <div
+        style="
+          flex-basis: 50%;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+        "
+      >
+        <img
+          src="../images/logo.jpg"
+          alt="LSPU Logo"
+          style="max-width: 70%; height: auto; border-radius: 10px"
+        />
+        <img
+          src="../images/lspucampus.jpg"
+          alt="LSPU Campus"
+          style="max-width: 80%; height: auto; border-radius: 10px"
+        />
+      </div>
+
+      <div
+        style="
+          flex-basis: 50%;
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-sizing: border-box;
+        "
+      >
+        <h2 style="color: #024f8c; margin-top: 0">Send us a Message</h2>
+        <form style="box-sizing: border-box">
+          <label style="display: block; margin-bottom: 5px">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 15px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+            "
+          />
+
+          <label style="display: block; margin-bottom: 5px">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 15px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+            "
+          />
+
+          <label style="display: block; margin-bottom: 5px">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            style="
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 15px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+            "
+          />
+
+          <label style="display: block; margin-bottom: 5px">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 15px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              resize: none;
+              box-sizing: border-box;
+            "
+          ></textarea>
+
+          <button
+            type="submit"
+            style="
+              background: #024f8c;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 16px;
+              width: 100%;
+              box-sizing: border-box;
+            "
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <div style="background-color: #024f8c; color: white; padding: 40px 20px">
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        "
+      >
+        <div style="width: 300px; margin-bottom: 20px">
+          <h3 style="color: #e6fafa; margin-bottom: 20px">LSPU</h3>
+          <p style="line-height: 1.6">
+            Laguna State Polytechnic University is a premier institution
+            providing quality, affordable, and globally competitive education.
+          </p>
+        </div>
+
+        <div style="width: 200px; margin-bottom: 20px">
+          <h4 style="color: #e6fafa; margin-bottom: 15px">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none">Home</a>
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none"
+                >Admissions</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none"
+                >Academics</a
+              >
+            </li>
+            <li style="margin-bottom: 8px">
+              <a href="#" style="color: white; text-decoration: none"
+                >Research</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div style="width: 300px; margin-bottom: 20px">
+          <h4 style="color: #e6fafa; margin-bottom: 15px">
+            Contact Information
+          </h4>
+          <p style="margin: 8px 0">📞 +63 49 123 4567</p>
+          <p style="margin: 8px 0">📧 info@lspu.edu.ph</p>
+          <p style="margin: 8px 0">
+            LSPU Main Administration, Santa Cruz, Laguna
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          max-width: 1200px;
+          margin: 30px auto 0;
+          padding-top: 20px;
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+          text-align: center;
+        "
+      >
+        <p style="margin: 0; font-size: 14px">
+          &copy; 2023 Laguna State Polytechnic University. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
