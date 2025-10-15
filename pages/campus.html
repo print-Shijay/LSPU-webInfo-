@@ -10,6 +10,10 @@
       content="An educational mini-site about Laguna State Polytechnic University (LSPU). Explore its campuses, courses, history, and contact information through this basic HTML project."
     />
     <title>LSPU - Laguna State Polytechnic University</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body
     style="
@@ -137,43 +141,6 @@
       </nav>
     </div>
 
-    <!-- Hero Section -->
-    <div
-      style="
-        background: linear-gradient(
-            rgba(2, 79, 140, 0.8),
-            rgba(22, 209, 209, 0.8)
-          ),
-          url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
-        background-size: cover;
-        background-position: center;
-        padding: 80px 20px;
-        text-align: center;
-        color: white;
-      "
-    >
-      <h1
-        style="
-          font-size: 48px;
-          margin: 0 0 20px 0;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        "
-      >
-        LSPU Campuses
-      </h1>
-      <p
-        style="
-          font-size: 20px;
-          max-width: 800px;
-          margin: 0 auto;
-          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        "
-      >
-        Explore our four campuses across Laguna, each offering unique programs
-        and opportunities for students.
-      </p>
-    </div>
-
     <!-- Main Content -->
     <div style="display: flex; min-height: calc(100vh - 180px)">
       <!-- Left Sidebar -->
@@ -188,7 +155,7 @@
           flex-direction: column;
           justify-content: space-between;
           position: sticky;
-          top: 80px;
+          top: 64px;
           height: calc(100vh - 80px);
         "
       >
@@ -202,7 +169,7 @@
               padding-bottom: 8px;
             "
           >
-            📍 Campuses
+            <i class="fas fa-map-marker-alt"></i> Campuses
           </h3>
 
           <a
@@ -218,7 +185,7 @@
               transition: 0.3s;
               background: rgba(255, 255, 255, 0.1);
             "
-            >🏫 Santa Cruz</a
+            ><i class="fas fa-school"></i> Santa Cruz</a
           >
           <a
             href="#san-pablo"
@@ -232,7 +199,7 @@
               border-radius: 5px;
               transition: 0.3s;
             "
-            >🏫 San Pablo</a
+            ><i class="fas fa-school"></i> San Pablo</a
           >
           <a
             href="#siniloan"
@@ -246,7 +213,7 @@
               border-radius: 5px;
               transition: 0.3s;
             "
-            >🏫 Siniloan</a
+            ><i class="fas fa-school"></i> Siniloan</a
           >
           <a
             href="#los-banos"
@@ -260,7 +227,7 @@
               border-radius: 5px;
               transition: 0.3s;
             "
-            >🏫 Los Baños</a
+            ><i class="fas fa-school"></i> Los Baños</a
           >
 
           <div style="margin-top: 30px">
@@ -272,7 +239,7 @@
                 padding-bottom: 8px;
               "
             >
-              📊 Quick Facts
+              <i class="fas fa-chart-bar"></i> Quick Facts
             </h3>
             <div
               style="
@@ -307,27 +274,6 @@
               <div style="font-size: 12px">Students</div>
             </div>
           </div>
-        </div>
-
-        <!-- Enroll Button -->
-        <div>
-          <a
-            href="#"
-            style="
-              display: block;
-              font-weight: bold;
-              color: white;
-              background: #1491ea;
-              text-align: center;
-              padding: 12px;
-              border-radius: 8px;
-              text-decoration: none;
-              font-size: 16px;
-              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-              transition: background-color 0.3s;
-            "
-            >Enroll Now</a
-          >
         </div>
       </div>
 
@@ -370,6 +316,7 @@
           >
             Santa Cruz Campus
           </h2>
+
           <div style="display: flex; gap: 20px; align-items: flex-start">
             <!-- Left Info -->
             <div
@@ -402,13 +349,14 @@
                 "
               >
                 <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                  🏆 Campus Highlights
+                  <i class="fas fa-trophy"></i>
+                  Campus Highlights
                 </h4>
-                <ul style="margin: 0; padding-left: 20px">
+                <ol style="margin: 0; padding-left: 20px">
                   <li>Center of Excellence in IT Education</li>
                   <li>Modern Engineering Laboratories</li>
                   <li>International Partnership Programs</li>
-                </ul>
+                </ol>
               </div>
             </div>
 
@@ -425,99 +373,148 @@
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Computer Studies (CCS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Information Technology</li>
-                    <li>BS Computer Science</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Computer Studies (CCS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Information Technology</li>
+                        <li>BS Computer Science</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Engineering (COE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Industrial Engineering</li>
-                    <li>BS Electrical Engineering</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Engineering (COE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Industrial Engineering</li>
+                        <li>BS Electrical Engineering</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Hospitality Management and Tourism (CHMT)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Hospitality Management</li>
-                    <li>BS Tourism Management</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Hospitality Management and Tourism (CHMT)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Hospitality Management</li>
+                        <li>BS Tourism Management</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Teacher Education (CTE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BSEd English</li>
-                    <li>BSEd Math</li>
-                    <li>BEEd</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Teacher Education (CTE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BSEd English</li>
+                        <li>BSEd Math</li>
+                        <li>BEEd</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Industrial Technology (CIT)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Industrial Technology (Automotive)</li>
-                    <li>BS Industrial Technology (Electrical)</li>
-                    <li>BS Industrial Technology (Electronics)</li>
-                    <li>BS Industrial Technology (Food)</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Industrial Technology (CIT)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Industrial Technology (Automotive)</li>
+                        <li>BS Industrial Technology (Electrical)</li>
+                        <li>BS Industrial Technology (Electronics)</li>
+                        <li>BS Industrial Technology (Food)</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Arts and Sciences (CAS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Biology</li>
-                    <li>BS Mathematics</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Arts and Sciences (CAS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Biology</li>
+                        <li>BS Mathematics</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Business Administration and Accountancy (CBAA)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Business Administration (Marketing)</li>
-                    <li>BS Business Administration (HRM)</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Business Administration and Accountancy
+                        (CBAA)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Business Administration (Marketing)</li>
+                        <li>BS Business Administration (HRM)</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Criminal Justice Education (CCJE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Criminology</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Criminal Justice Education (CCJE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Criminology</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -577,13 +574,14 @@
                 "
               >
                 <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                  🏆 Campus Highlights
+                  <i class="fas fa-trophy"></i>
+                  Campus Highlights
                 </h4>
-                <ul style="margin: 0; padding-left: 20px">
+                <ol style="margin: 0; padding-left: 20px">
                   <li>Center of Development in Engineering</li>
                   <li>Industry-Academe Linkage Programs</li>
                   <li>Research and Innovation Hub</li>
-                </ul>
+                </ol>
               </div>
             </div>
             <div style="flex: 2.5; font-size: 14px">
@@ -598,87 +596,130 @@
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Computer Studies (CCS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Computer Science</li>
-                    <li>BS Information Technology</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Computer Studies (CCS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Computer Science</li>
+                        <li>BS Information Technology</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Engineering (COE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Electrical Engineering</li>
-                    <li>BS Mechanical Engineering</li>
-                    <li>BS Civil Engineering</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Engineering (COE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Electrical Engineering</li>
+                        <li>BS Mechanical Engineering</li>
+                        <li>BS Civil Engineering</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Industrial Technology (CIT)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Industrial Technology (Drafting)</li>
-                    <li>BS Industrial Technology (Electronics)</li>
-                    <li>BS Industrial Technology (Automotive)</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Industrial Technology (CIT)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Industrial Technology (Drafting)</li>
+                        <li>BS Industrial Technology (Electronics)</li>
+                        <li>BS Industrial Technology (Automotive)</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Teacher Education (CTE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BSEd English</li>
-                    <li>BSEd Science</li>
-                    <li>BEEd</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Teacher Education (CTE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BSEd English</li>
+                        <li>BSEd Science</li>
+                        <li>BEEd</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Business Administration and Accountancy (CBAA)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Business Administration (Financial)</li>
-                    <li>BS Business Administration (Marketing)</li>
-                    <li>BS Business Administration (HRM)</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Business Administration and Accountancy
+                        (CBAA)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Business Administration (Financial)</li>
+                        <li>BS Business Administration (Marketing)</li>
+                        <li>BS Business Administration (HRM)</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Criminal Justice Education (CCJE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Criminology</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Criminal Justice Education (CCJE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Criminology</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Arts and Sciences (CAS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Psychology</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Arts and Sciences (CAS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Psychology</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -737,13 +778,14 @@
                 "
               >
                 <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                  🏆 Campus Highlights
+                  <i class="fas fa-trophy"></i>
+                  Campus Highlights
                 </h4>
-                <ul style="margin: 0; padding-left: 20px">
+                <ol style="margin: 0; padding-left: 20px">
                   <li>Center for Environmental Studies</li>
                   <li>Fisheries and Aquatic Resources Hub</li>
                   <li>Agricultural Innovation Center</li>
-                </ul>
+                </ol>
               </div>
             </div>
             <div style="flex: 2.5; font-size: 14px">
@@ -758,70 +800,107 @@
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Arts and Sciences (CAS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Environmental Science</li>
-                    <li>BS Biology</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Arts and Sciences (CAS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Environmental Science</li>
+                        <li>BS Biology</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Engineering (COE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Agricultural Engineering</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Engineering (COE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Agricultural Engineering</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Computer Studies (CCS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Information Technology</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Computer Studies (CCS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Information Technology</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Teacher Education (CTE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BSEd English</li>
-                    <li>BSEd Math</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Teacher Education (CTE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BSEd English</li>
+                        <li>BSEd Math</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Business Administration and Accountancy (CBAA)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Business Administration</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Business Administration and Accountancy
+                        (CBAA)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Business Administration</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Fisheries (CF)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Fisheries</li>
-                    <li>BS Forestry</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Fisheries (CF)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Fisheries</li>
+                        <li>BS Forestry</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -878,13 +957,14 @@
                 "
               >
                 <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                  🏆 Campus Highlights
+                  <i class="fas fa-trophy"></i>
+                  Campus Highlights
                 </h4>
-                <ul style="margin: 0; padding-left: 20px">
+                <ol style="margin: 0; padding-left: 20px">
                   <li>Agricultural Research Center</li>
                   <li>Development Communication Hub</li>
                   <li>Partnership with IRRI and UPLB</li>
-                </ul>
+                </ol>
               </div>
             </div>
             <div style="flex: 2.5; font-size: 14px">
@@ -899,58 +979,88 @@
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Arts and Sciences (CAS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Development Communication</li>
-                    <li>BS Environmental Science</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Arts and Sciences (CAS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Development Communication</li>
+                        <li>BS Environmental Science</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Engineering (COE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Agricultural Engineering</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Engineering (COE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Agricultural Engineering</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Agriculture (CA)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Agriculture</li>
-                    <li>BS Forestry</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Agriculture (CA)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Agriculture</li>
+                        <li>BS Forestry</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Teacher Education (CTE)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BEEd</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Teacher Education (CTE)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BEEd</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
 
                 <div
                   style="background: #f9f9f9; padding: 15px; border-radius: 5px"
                 >
-                  <h4 style="margin: 0 0 10px 0; color: #1491ea">
-                    College of Computer Studies (CCS)
-                  </h4>
-                  <ul style="margin: 0; padding-left: 20px">
-                    <li>BS Information Technology</li>
-                  </ul>
+                  <dl>
+                    <dt>
+                      <h4 style="margin: 0 0 10px 0; color: #1491ea">
+                        College of Computer Studies (CCS)
+                      </h4>
+                    </dt>
+                    <dd>
+                      <ul style="margin: 0; padding-left: 20px">
+                        <li>BS Information Technology</li>
+                      </ul>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -976,43 +1086,6 @@
             Laguna State Polytechnic University is a premier institution
             providing quality, affordable, and globally competitive education.
           </p>
-          <div style="margin-top: 15px">
-            <a
-              href="#"
-              style="
-                display: inline-block;
-                margin-right: 10px;
-                color: white;
-                font-size: 20px;
-              "
-              >📘</a
-            >
-            <a
-              href="#"
-              style="
-                display: inline-block;
-                margin-right: 10px;
-                color: white;
-                font-size: 20px;
-              "
-              >📷</a
-            >
-            <a
-              href="#"
-              style="
-                display: inline-block;
-                margin-right: 10px;
-                color: white;
-                font-size: 20px;
-              "
-              >🐦</a
-            >
-            <a
-              href="#"
-              style="display: inline-block; color: white; font-size: 20px"
-              >📹</a
-            >
-          </div>
         </div>
 
         <div style="width: 200px; margin-bottom: 20px">
@@ -1043,7 +1116,7 @@
           <h4 style="color: #e6fafa; margin-bottom: 15px">
             Contact Information
           </h4>
-          <p style="margin: 8px 0">📞 +63 49 304 7000</p>
+          <p style="margin: 8px 0">📞 +63 49 123 4567</p>
           <p style="margin: 8px 0">📧 info@lspu.edu.ph</p>
           <p style="margin: 8px 0">
             LSPU Main Administration, Santa Cruz, Laguna

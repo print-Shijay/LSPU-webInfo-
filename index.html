@@ -24,9 +24,12 @@
     <!-- Header and Navigation -->
     <div
       style="
-        background: linear-gradient(to right, #16d1d1, #024f8c);
+        background: linear-gradient(to right, rgb(22, 209, 209), #024f8c);
         padding: 15px 0;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
       "
     >
       <nav
@@ -74,13 +77,14 @@
                 padding: 8px 15px;
                 border-radius: 4px;
                 transition: background-color 0.3s;
+                background-color: rgba(255, 255, 255, 0.2);
               "
               >Home</a
             >
           </li>
           <li>
             <a
-              href="pages/campus.html"
+              href="/pages/campus.html"
               style="
                 text-decoration: none;
                 color: white;
@@ -93,7 +97,7 @@
           </li>
           <li>
             <a
-              href="pages/faculty.html"
+              href="/pages/faculty.html"
               style="
                 text-decoration: none;
                 color: white;
@@ -106,7 +110,7 @@
           </li>
           <li>
             <a
-              href="pages/news.html"
+              href="/pages/news.html"
               style="
                 text-decoration: none;
                 color: white;
@@ -119,7 +123,7 @@
           </li>
           <li>
             <a
-              href="pages/contact.html"
+              href="/pages/contact.html"
               style="
                 text-decoration: none;
                 color: white;
@@ -133,6 +137,7 @@
         </ul>
       </nav>
     </div>
+
     <!-- Hero Section -->
     <section style="height: 80vh; position: relative; overflow: hidden">
       <div
