@@ -10,9 +10,12 @@
       content="An educational mini-site about Laguna State Polytechnic University (LSPU). Explore its campuses, courses, history, and contact information through this basic HTML project."
     />
     <title>LSPU - Laguna State Polytechnic University</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body
-    lang="en"
     style="
       margin: 0;
       padding: 0;
@@ -21,11 +24,15 @@
       background-color: #e6f3f0;
     "
   >
+    <!-- Header with Navigation -->
     <div
       style="
-        background: linear-gradient(to right, #00abab, #004d4d);
+        background: linear-gradient(to right, rgb(22, 209, 209), #024f8c);
         padding: 15px 0;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
       "
     >
       <nav
@@ -105,20 +112,21 @@
           </li>
           <li>
             <a
-              href="#"
+              href="news.html"
               style="
                 text-decoration: none;
                 color: white;
                 padding: 8px 15px;
                 border-radius: 4px;
                 transition: background-color 0.3s;
+                background-color: rgba(255, 255, 255, 0.2);
               "
               >News</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="contact.html"
               style="
                 text-decoration: none;
                 color: white;
@@ -133,7 +141,382 @@
       </nav>
     </div>
 
-    <div style="background-color: #004d4d; color: white; padding: 40px 20px">
+    <!-- Main Content -->
+    <div style="display: flex; min-height: calc(100vh - 180px)">
+      <!-- Left Sidebar -->
+      <div
+        id="left"
+        style="
+          background: linear-gradient(135deg, #0369a1, #024e8ca3);
+          width: 500px;
+          height: 85vh;
+          position: sticky;
+          top: 90px;
+          align-self: flex-start;
+          border-left: 8px solid #024e8c;
+          border-radius: 15px;
+          padding: 20px;
+          margin: 20px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          color: #222;
+          overflow-y: auto;
+          overflow-x: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          max-height: calc(100vh - 150px);
+        "
+        onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.3)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)';"
+      >
+        <h2
+          style="
+            color: #e6f3f0;
+            margin: auto;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            letter-spacing: 2px;
+          "
+        >
+          Announcement
+        </h2>
+        <!-- list of Announcement -->
+        <ol style="margin: 0; padding: 10px; color: white; font-size: 15px">
+          <li>
+            <div
+              class="annoucement"
+              style="
+                margin-top: 10px;
+                border-bottom: #333 1px solid;
+                padding-bottom: 10px;
+              "
+            >
+              <h2
+                style="
+                  color: #fff;
+                  margin: 0 0 10px 0;
+                  font-size: 24px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                <i class="fa-solid fa-bullhorn"></i>
+                𝗡𝗼 𝗩𝗲𝗵𝗶𝗰𝗹𝗲 𝗘𝗻𝘁𝗿𝘆 𝗣𝗮𝘀𝘀 𝗦𝘁𝗶𝗰𝗸𝗲𝗿, 𝗡𝗼 𝗘𝗻𝘁𝗿𝘆
+              </h2>
+              <h3
+                style="
+                  color: #f0f0f0;
+                  font-weight: 400;
+                  line-height: 1.5;
+                  margin: 0;
+                  font-size: 18px;
+                "
+              >
+                November 3, 2025 In line with the University’s continuous effort
+                to enhance campus safety, regulate vehicle access, and uphold
+                institutional integrity, the Security Management Office informs
+                the public of the implementation of the “𝗡𝗼 𝗩𝗲𝗵𝗶𝗰𝗹𝗲 𝗘𝗻𝘁𝗿𝘆 𝗣𝗮𝘀𝘀
+                𝗦𝘁𝗶𝗰𝗸𝗲𝗿, 𝗡𝗼 𝗘𝗻𝘁𝗿𝘆 𝗣𝗼𝗹𝗶𝗰𝘆” 𝗲𝗳𝗳𝗲𝗰𝘁𝗶𝘃𝗲 𝗼𝗻/𝗯𝗲𝗳𝗼𝗿𝗲 𝗡𝗼𝘃𝗲𝗺𝗯𝗲𝗿 𝟯, 𝟮𝟬𝟮𝟱.
+                Appropriate documents may be secured through the Business
+                Affairs Office and/or Security Management Office
+              </h3>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Right Content -->
+      <div style="flex: 1; padding: 25px; overflow-y: auto">
+        <h2
+          style="
+            color: #024f8c;
+            font-size: 32px;
+            font-weight: bold;
+            border-bottom: 3px solid #024f8c;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+          "
+        >
+          <i class="fa-solid fa-newspaper"></i> Latest News & Updates
+        </h2>
+
+        <!--  News Card 1 -->
+        <div
+          style="
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+          "
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+        >
+          <img
+            src="../images/n1.jpg"
+            alt="LSPU Research Symposium 2025"
+            style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 10px;
+              flex-shrink: 0;
+            "
+          />
+
+          <!-- Text section -->
+          <div style="flex: 1">
+            <h3 style="color: #024f8c; margin: 0 0 5px 0">
+              College of Fisheries (COF) of the Laguna State Polytechnic
+              University-Los Baños
+            </h3>
+            <p style="color: #555; font-size: 15px; margin: 0 0 10px 0">
+              <i class="fa-solid fa-calendar-days"></i> October 2025
+            </p>
+            <p style="color: #444; line-height: 1.6; margin: 0 0 10px 0">
+              The College of Fisheries (COF) of the Laguna State Polytechnic
+              University-Los Baños Campus produced 23 new Registered Fisheries
+              Professionals (RFPs) during the October 2025 Fisheries
+              Professional Licensure Examination (FPLE), with a passing rate of
+              52.27%
+            </p>
+            <a
+              href="#"
+              style="color: #024f8c; text-decoration: none; font-weight: bold"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <!--  News Card 2 -->
+        <div
+          style="
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+          "
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+        >
+          <img
+            src="../images/n2.jpg"
+            alt="LSPU Research Symposium 2025"
+            style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 10px;
+              flex-shrink: 0;
+            "
+          />
+
+          <!-- Text section -->
+          <div style="flex: 1">
+            <h3 style="color: #024f8c; margin: 0 0 5px 0">
+              No Face to Face Classes
+            </h3>
+            <p style="color: #555; font-size: 15px; margin: 0 0 10px 0">
+              <i class="fa-solid fa-calendar-days"></i> October 2025
+            </p>
+            <p style="color: #444; line-height: 1.6; margin: 0 0 10px 0">
+              In line with the announcement of the Provincial Government of
+              Laguna, classes will shift to online modality across university
+              campuses.
+            </p>
+            <a
+              href="https://www.facebook.com/share/p/1CjrAB4QnZ/"
+              style="color: #024f8c; text-decoration: none; font-weight: bold"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <!--  News Card 3 -->
+        <div
+          style="
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+          "
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+        >
+          <img
+            src="../images/n4.jpg"
+            alt="LSPU Research Symposium 2025"
+            style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 10px;
+              flex-shrink: 0;
+            "
+          />
+
+          <!-- Text section -->
+          <div style="flex: 1">
+            <h3 style="color: #024f8c; margin: 0 0 5px 0">
+              𝗛𝗮𝗽𝗽𝘆 𝗪𝗼𝗿𝗹𝗱 𝗧𝗲𝗮𝗰𝗵𝗲𝗿𝘀’ 𝗗𝗮𝘆!
+            </h3>
+            <p style="color: #555; font-size: 15px; margin: 0 0 10px 0">
+              <i class="fa-solid fa-calendar-days"></i> October 2025
+            </p>
+            <p style="color: #444; line-height: 1.6; margin: 0 0 10px 0">
+              This World Teachers’ Day, LSPU joins in honoring our mentors,
+              partners, and inspirations. With the theme “Recasting Teaching as
+              a Collaborative Profession,” we celebrate the power of working
+              together, sharing knowledge, and growing as one. Thank you,
+              amazing teachers!
+            </p>
+            <a
+              href="https://www.facebook.com/share/p/1CjrAB4QnZ/"
+              style="color: #024f8c; text-decoration: none; font-weight: bold"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <!--  News Card 4 -->
+        <div
+          style="
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+          "
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+        >
+          <img
+            src="../images/n3.jpg"
+            alt="LSPU Research Symposium 2025"
+            style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 10px;
+              flex-shrink: 0;
+            "
+          />
+
+          <!-- Text section -->
+          <div style="flex: 1">
+            <h3 style="color: #024f8c; margin: 0 0 5px 0">
+              Safe Campus, Stronger Community
+            </h3>
+            <p style="color: #555; font-size: 15px; margin: 0 0 10px 0">
+              <i class="fa-solid fa-calendar-days"></i> October 2025
+            </p>
+            <pre style="color: #444; line-height: 1.6; margin: 0 0 10px 0">
+🛡️𝗦𝗮𝗳𝗲 𝗖𝗮𝗺𝗽𝘂𝘀, 𝗦𝘁𝗿𝗼𝗻𝗴𝗲𝗿 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆: 𝗦𝘁𝗮𝘆𝗶𝗻𝗴 𝗣𝗿𝗲𝗽𝗮𝗿𝗲𝗱 𝗧𝗼𝗴𝗲𝘁𝗵𝗲𝗿 
+Being prepared means knowing how to act calmly, responsibly, and together in any unexpected situation on campus. 
+Whether it’s a small incident or a big emergency, every prepared person matters.
+𝗛𝗼𝘄 𝗪𝗲 𝗞𝗲𝗲𝗽 𝗖𝗮𝗺𝗽𝘂𝘀𝗲𝘀 𝗦𝗮𝗳𝗲
+🛡️ Security Patrols
+🎥 CCTV Monitoring
+📚 Emergency Drills
+🧠 Wellness Programs
+🤝 Community Watch
+ 𝗜𝗳 𝗬𝗼𝘂 𝗦𝗲𝗲 𝗦𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗨𝗻𝘂𝘀𝘂𝗮𝗹:
+📞 Report it calmly and clearly
+📍 Follow official instructions
+👥 Help others stay calm
+🚪 Know your exits
+⚠️ 𝗥𝗲𝗺𝗶𝗻𝗱𝗲𝗿
+Fake bomb threats and emergency hoaxes are illegal.
+Under PD 1727, making bomb jokes or false threats is punishable by up to 5 years in prison or a ₱40,000 fine—or both.
+Let’s report only what’s true, because safety is everyone’s responsibility. 💬👣
+𝙏𝙤𝙜𝙚𝙩𝙝𝙚𝙧, 𝙬𝙚 𝙗𝙪𝙞𝙡𝙙 𝙖 𝙨𝙖𝙛𝙚, 𝙥𝙚𝙖𝙘𝙚𝙛𝙪𝙡, 𝙖𝙣𝙙 𝙬𝙚𝙡𝙘𝙤𝙢𝙞𝙣𝙜 𝙘𝙖𝙢𝙥𝙪𝙨 𝙛𝙤𝙧 𝙖𝙡𝙡.</pre
+            >
+            <a
+              href="https://www.facebook.com/share/p/1CjrAB4QnZ/"
+              style="color: #024f8c; text-decoration: none; font-weight: bold"
+              >Read More →</a
+            >
+          </div>
+        </div>
+
+        <!--  News Card 5 -->
+        <div
+          style="
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+          "
+          onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+        >
+          <img
+            src="../images/n5.jpg"
+            alt="LSPU Research Symposium 2025"
+            style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 10px;
+              flex-shrink: 0;
+            "
+          />
+
+          <!-- Text section -->
+          <div style="flex: 1">
+            <h3 style="color: #024f8c; margin: 0 0 5px 0">
+              New Licensed Psychometricians
+            </h3>
+            <p style="color: #555; font-size: 15px; margin: 0 0 10px 0">
+              <i class="fa-solid fa-calendar-days"></i> October 2025
+            </p>
+            <pre style="color: #444; line-height: 1.6; margin: 0 0 10px 0">
+The College of Arts and Sciences (CAS) of Laguna State Polytechnic University (LSPU) posted a commendable performance in the September 2025 Board 
+Licensure Examination for Psychometricians, achieving an overall institutional passing rate of 76.79%.
+Leading the university’s success was Kathryn Christel Joy R. Dela Rosa from the LSPU-Santa Cruz Campus,
+ who secured 10th place among the top examinees with a rating of 87.60%.
+The performance of LSPU per campus is as follows:
+- LSPU–Santa Cruz Campus: 73.02% (92 passers out of 126 examinees)
+- LSPU–Siniloan Campus: 78.95% (60 passers out of 76 examinees)
+- LSPU–San Pablo City Campus: 84.21% (48 passers out of 57 examinees)
+- LSPU–Los Baños Campus: 73.53% (25 passers out of 34 examinees)
+LSPU’s strong showing in this year’s licensure examination reflects the university’s continued commitment to 
+academic excellence and professional preparedness in the field of psychology.
+Congratulations to our new psychometricians!</pre
+            >
+            <a
+              href="https://www.facebook.com/share/p/1CjrAB4QnZ/"
+              style="color: #024f8c; text-decoration: none; font-weight: bold"
+              >Read More →</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #024f8c; color: white; padding: 40px 20px">
       <div
         style="
           max-width: 1200px;

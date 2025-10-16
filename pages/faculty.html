@@ -23,9 +23,12 @@
   >
     <div
       style="
-        background: linear-gradient(to right, #00abab, #004d4d);
+        background: linear-gradient(to right, rgb(22, 209, 209), #024f8c);
         padding: 15px 0;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
       "
     >
       <nav
@@ -99,6 +102,7 @@
                 padding: 8px 15px;
                 border-radius: 4px;
                 transition: background-color 0.3s;
+                background-color: rgba(255, 255, 255, 0.2);
               "
               >Faculty</a
             >
@@ -118,7 +122,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="contact.html"
               style="
                 text-decoration: none;
                 color: white;
@@ -133,7 +137,303 @@
       </nav>
     </div>
 
-    <div style="background-color: #004d4d; color: white; padding: 40px 20px">
+    <div id="Board" style="padding: 20px 5%; max-width: 1200px; margin: 0 auto">
+      <!-- Header Section -->
+      <div style="text-align: center; padding: 40px 0">
+        <h1
+          style="font-size: 48px; color: #024f8c; margin: 0; font-weight: 700"
+        >
+          LSPU Board of Regents
+        </h1>
+        <div
+          style="
+            height: 4px;
+            width: 120px;
+            background: linear-gradient(to right, #024f8c, #4a90e2);
+            margin: 20px auto;
+          "
+        ></div>
+        <p
+          style="
+            font-size: 18px;
+            color: #555;
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+          "
+        >
+          The governing body of Laguna State Polytechnic University, committed
+          to excellence in education and community service.
+        </p>
+      </div>
+
+      <hr
+        style="
+          border: none;
+          height: 1px;
+          background: linear-gradient(
+            to right,
+            transparent,
+            #024f8c,
+            transparent
+          );
+          margin: 40px 0;
+        "
+      />
+
+      <!-- Board Members Section -->
+      <div
+        id="Pictures"
+        style="
+          display: grid;
+          grid-template-columns: repeat(1, 1ft);
+          gap: 40px;
+          justify-items: center;
+        "
+      >
+        <!-- Member 1 -->
+        <figure
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+          "
+        >
+          <!-- image -->
+          <div style="overflow: hidden; height: 500px; width: 100%">
+            <img
+              src="https://lspu.edu.ph/assets/img/bor/1.%20CHED%20Chair.jpg"
+              alt="Chairperson, Commission on Higher Education (CHED)-Dr. Shirley C. Agrupis"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+
+          <!-- nameplate -->
+          <figcaption
+            class="nameplate"
+            style="padding: 25px; text-align: center"
+          >
+            <div
+              style="
+                background: linear-gradient(135deg, #024f8c, #4a90e2);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                margin-bottom: 15px;
+              "
+            >
+              <h2 style="margin: 0; font-size: 20px; font-weight: bold">
+                Dr. Shirley C. Agrupis
+              </h2>
+            </div>
+            <h3
+              style="
+                color: #555;
+                margin: 0;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.5;
+                max-width: 400px;
+              "
+            >
+              Chairperson, Commission on Higher Education (CHED) Chairperson,
+              LSPU Board of Regents
+            </h3>
+          </figcaption>
+        </figure>
+        <!-- Member 2 -->
+        <figure
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+          "
+        >
+          <!-- image -->
+          <div style="overflow: hidden; height: 500px; width: 100%">
+            <img
+              src="https://lspu.edu.ph/assets/img/bor/2.%20LSPU%20Pres.jpg"
+              alt="Chairperson, Commission on Higher Education (CHED)-Dr. Shirley C. Agrupis"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+
+          <!-- nameplate -->
+          <figcaption
+            class="nameplate"
+            style="padding: 25px; text-align: center"
+          >
+            <div
+              style="
+                background: linear-gradient(135deg, #024f8c, #4a90e2);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                margin-bottom: 15px;
+              "
+            >
+              <h2 style="margin: 0; font-size: 20px; font-weight: bold">
+                Dr. Mario R. Briones
+              </h2>
+            </div>
+            <h3
+              style="
+                color: #555;
+                margin: 0;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.5;
+                max-width: 400px;
+              "
+            >
+              University President, Laguna State Polytechnic University (LSPU)
+              Co-Chairperson, LSPU Board of Regents
+            </h3>
+          </figcaption>
+        </figure>
+
+        <!-- 2nd set of members-->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            border-top: #024f8c 1px solid;
+            padding-top: 20px;
+            width: 100%;
+            justify-items: center;
+            align-items: center;
+          "
+        >
+          <figure
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              background: white;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+              transition: transform 0.3s ease;
+              max-width: 350px;
+              max-height: 500px;
+            "
+          >
+            <!-- image -->
+            <div style="overflow: hidden; height: 400px; width: 100%">
+              <img
+                src="https://lspu.edu.ph/assets/img/bor/3.%20Senate%20Rep.png"
+                alt="Senator, Republic of the Philippines Member, LSPU Board of Regents - Hon. Loren B. Lagarda"
+                style="height: 100%; width: 100%"
+              />
+            </div>
+
+            <!-- nameplate -->
+            <figcaption
+              class="nameplate"
+              style="padding: 25px; text-align: center"
+            >
+              <div
+                style="
+                  background: linear-gradient(135deg, #024f8c, #4a90e2);
+                  color: white;
+                  padding: 12px 20px;
+                  border-radius: 8px;
+                  margin-bottom: 15px;
+                "
+              >
+                <h2 style="margin: 0; font-size: 20px; font-weight: bold">
+                  Hon. Loren B. Lagarda
+                </h2>
+              </div>
+              <h3
+                style="
+                  color: #555;
+                  margin: 0;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 1.5;
+                  max-width: 400px;
+                "
+              >
+                Senator, Republic of the Philippines Member, LSPU Board of
+                Regents
+              </h3>
+            </figcaption>
+          </figure>
+
+          <figure
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              background: white;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+              transition: transform 0.3s ease;
+              max-width: 350px;
+              max-height: 500px;
+            "
+          >
+            <!-- image -->
+            <div style="overflow: hidden; height: 400px; width: 100%">
+              <img
+                src="https://lspu.edu.ph/assets/img/bor/4.%20Congress%20Rep.jpg"
+                alt="Congressman, Republic of the Philippines Member, LSPU Board of Regents - Hon. Jude Acidre"
+                style="height: 100%; width: 100%"
+              />
+            </div>
+
+            <!-- nameplate -->
+            <figcaption
+              class="nameplate"
+              style="padding: 25px; text-align: center"
+            >
+              <div
+                style="
+                  background: linear-gradient(135deg, #024f8c, #4a90e2);
+                  color: white;
+                  padding: 12px 20px;
+                  border-radius: 8px;
+                  margin-bottom: 15px;
+                "
+              >
+                <h2 style="margin: 0; font-size: 20px; font-weight: bold">
+                  Hon. Jude Acidre
+                </h2>
+              </div>
+              <h3
+                style="
+                  color: #555;
+                  margin: 0;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 1.5;
+                  max-width: 400px;
+                "
+              >
+                Congressman, Republic of the Philippines Member, LSPU Board of
+                Regents
+              </h3>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div style="background-color: #024f8c; color: white; padding: 40px 20px">
       <div
         style="
           max-width: 1200px;
